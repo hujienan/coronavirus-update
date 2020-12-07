@@ -8,9 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "moment": "^2.29.1",
     "next": "10.0.0",
     "next-pwa": "^3.1.5",
+    "postcss": "^8.1.14",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "swr": "^0.3.9",
+    "tailwindcss": "^2.0.1"
   }
 }
