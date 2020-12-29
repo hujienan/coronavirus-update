@@ -17,5 +17,10 @@
     "react-dom": "17.0.1",
     "swr": "^0.3.9",
     "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0"
   }
 }
