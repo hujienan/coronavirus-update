@@ -29,8 +29,6 @@ function Content () {
     }
   ]
 
-  // let records = data ? data.data : null
-
   const [sortWay, setSortWay] = useState(sortWayOptions[0]['key'])
 
   const [records, setRecords] = useState(null)
