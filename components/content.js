@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import useSWR from 'swr'
+import CountryCard from './country-card'
 
 function Content () {
   
@@ -60,14 +61,14 @@ function Content () {
 
   return (
     <div className="px-4">
-      <p className="text-right">Sort By {' '} 
+      <p className="text-right sticky top-1 my-4">Sort By {' '} 
         <select value={sortWay} onChange={(e) => setSortWay(e.target.value)}>
           {sortWayOptions.map((option) => (
             <option key={`sort-by-${option.key}`} value={option.key}>{option.label}</option>
           ))}
         </select>
       </p>
-      <table className="border-collapse border-2 border-green-800 w-full">
+      <table className="border-collapse border-2 border-green-800 w-full hidden md:table">
         <thead>
           <tr>
             <th className="border border-green-600">Country</th>
@@ -93,6 +94,11 @@ function Content () {
           ))}
         </tbody>
       </table>
+      <div className="md:hidden">
+        {records.map((record) => (
+          <CountryCard data={record} key={record.code}/>
+        ))}
+      </div>
     </div>
 	)
 
