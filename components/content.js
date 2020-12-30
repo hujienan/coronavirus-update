@@ -68,7 +68,7 @@ function Content () {
           ))}
         </select>
       </p>
-      <table className="border-collapse border-2 border-green-800 w-full hidden md:table">
+      <table className="border-collapse border-2 border-green-800 w-full hidden md:table 2xl:text-5xl">
         <thead>
           <tr>
             <th className="border border-green-600">Country</th>
