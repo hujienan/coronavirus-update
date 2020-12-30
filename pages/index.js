@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="text-center text-2xl">Coronavirus Update</h1>
+        <h1 className="text-center text-2xl 2xl:text-4xl 2xl:text-red-600">Coronavirus Update</h1>
         <Content></Content>
       </main>
 
