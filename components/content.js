@@ -68,7 +68,7 @@ function Content () {
           ))}
         </select>
       </p>
-      <table className="border-collapse border-2 border-green-800 w-full hidden md:table 2xl:text-5xl">
+      <table className="border-collapse border-2 border-green-800 w-full hidden md:table 2xl:text-5xl 2xl:text-red-600">
         <thead>
           <tr>
             <th className="border border-green-600">Country</th>
@@ -82,7 +82,7 @@ function Content () {
         </thead>
         <tbody>
           {records.map((item) => (
-            <tr key={item.code} className="text-green-800 text-center hover:text-white hover:bg-green-800 cursor-pointer">
+            <tr key={item.code} className="text-green-800 text-center hover:text-white hover:bg-green-800 cursor-pointer 2xl:text-red-600">
               <td className="border border-green-600">{item.name}</td>
               <td className="border border-green-600">{item.population}</td>
               <td className="border border-green-600">{item.latest_data.confirmed}</td>
